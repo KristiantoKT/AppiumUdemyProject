@@ -1,6 +1,7 @@
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
+import org.json.simple.parser.ParseException;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -23,7 +24,7 @@ public class GeneralStoreTest {
     private PageObject po;
 
     @BeforeClass
-    public void setUp() throws IOException, InterruptedException {
+    public void setUp() throws IOException, InterruptedException, ParseException {
         base = new Base();
         base.startServer();
         base.startEmulator();
@@ -52,6 +53,7 @@ public class GeneralStoreTest {
 
         // Fill in Name field
         po.homePageObject.nameInputField.sendKeys("Hello");
+
         driver.hideKeyboard();
 
         // Tap Let's Shop button

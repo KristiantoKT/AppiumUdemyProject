@@ -1,0 +1,18 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "username": "kristianto_HFbOAl",
+  "access_key": "TL3kVWuSePoZsqgA7K8k",
+  "capabilities": {
+    "project": "First TestNg Android Project",
+    "build": "browserstack-build-1",
+    "name": "first_test",
+    "browserstack.debug": true,
+    "app": "bs://7d305e4e11f7c8b8c5fbfe5f4cc9fe262e50351b"
+  },
+  "environments": [
+    {
+      "device": "Xiaomi Redmi Note 9",
+      "os_version": "10.0"
+    }
+  ]
+}
